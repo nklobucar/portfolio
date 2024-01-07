@@ -10,7 +10,7 @@
      body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)),url('mapcropped.jpg');
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)),url('./img/mapcropped.jpg');
     background-size: 1200px;
     background-position: 700px;
     background-repeat: no-repeat;
@@ -171,13 +171,13 @@
 </head>
 <body>
     <div id="map"></div>
-    <a href="nklobucar.html"><img src="nklogo.png" class = "logo" ></a>
+    <a href="index.html"><img src="./img/nklogo.png" class = "logo" ></a>
     <div class="couponcode">
-        <img src="pics/takeoff/walking.jpeg".png" class="couponimage fade-in">
+        <img src="./img/walking.jpeg" class="couponimage fade-in">
         <span class="coupontooltip"> Pearson Airport, Toronto</span>
     </div>
     <div class="couponcode2">
-        <img src="pics/takeoff/supplies.JPG".png" class="img2 fade-in">
+        <img src="./img/supplies.JPG" class="img2 fade-in">
         <span class="coupontooltip2"> 40L, 6.8kg</span>
     </div>
     <p class="p1">choose a destination:</p>
@@ -257,7 +257,7 @@
                 image: new ol.style.Icon({
                     anchor: [0.5, 1],
                     crossOrigin: 'anonymous',
-                    src: 'marker-icon2.png',
+                    src: './img/marker-icon2.png',
                     size: [30, 50],
                     cursor: 'pointer'
                 })
