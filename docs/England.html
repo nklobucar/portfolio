@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nklobucar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            position: relative; /* Set position to relative for absolute positioning of child elements */
+            align-items: center;
+            justify-content: center;
+        }
+        header, section, footer {
+            padding: 0px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 85px;
+            font-weight: 150;
+            font-family: 'KindelSerif', sans-serif;
+            position: absolute;
+            top: 35px;
+            left: 1150px;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Place on top of the image */
+            color: #ffffff; /* Optionally set text color */
+        }
+        header h2 {
+            margin-bottom: 0;
+            font-size: 30px;
+            font-weight: 100;
+            position: absolute;
+            font-family: 'KindelSerif', sans-serif;
+            top: 160px;
+            left: 1050px;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Place on top of the image */
+            color: #ffffff; /* Optionally set text color */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+        a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+            p1 {
+            font-size: 30px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            position: absolute;
+            top: 970px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        p2 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 5600px;
+            transform: translate(-50%, -50%);
+        }
+        p3 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            position: absolute;
+            top: 9000px;
+            transform: translate(-50%, -50%);
+        }
+        p4 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            position: absolute;
+            top: 12200px;
+            transform: translate(-50%, -50%);
+            margin-bottom: 100px;
+        }
+        section {
+            margin: 0px;
+            position: relative;
+        }
+        .logo {
+    width: 5%; /* Adjust the width as needed */
+    height: auto;
+    position: absolute;
+    top: 5px;
+    left: 5px; /* Adjust the left value to position img2 on the left side */
+    z-index: 2;
+    opacity: 1;
+}
+        img {
+            width: 100%;
+            height: auto;
+            animation: fadeIn 2s ease-in-out forwards;
+            position: relative; /* Ensure relative positioning for child elements */
+        }
+        .img2 {
+            width: 45%; /* Adjust the width as needed for the second image */
+            position: absolute;
+            top: 1300px;
+            left: 100px;
+            width: 40%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        .img3 {
+            width: 45%; /* Adjust the width as needed for the second image */
+            position: absolute;
+            top: 1300px;
+            left: 770px;
+            width: 40%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        .img4 {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 2600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img5 {
+    width: 35%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 3100px;
+    left: 120px;
+}
+.img6 {
+    left: 820px;
+    width: 35%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 3100px;
+}
+.img7 {
+    width: 65%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    display: block;
+    top: 5000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img8 {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 4220px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img9 {
+            width: 30%; /* Adjust the width as needed for the second image */
+            position: absolute;
+            top: 5500px;
+            left: 245px;
+            height: auto; /* Maintain aspect ratio */
+        }
+        .img10 {
+            width: 30%; /* Adjust the width as needed for the second image */
+            position: absolute;
+            top: 5500px;
+            left: 760px;
+            height: auto; /* Maintain aspect ratio */
+        }
+        .img11 {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 6150px;
+    left: 760px;
+        }
+        .img12 {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 6150px;
+    left: 100px;
+        }
+        .img13 {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 6050px;
+    left: 150px;
+        }
+        .img14 {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 6050px;
+    left: 750px;
+        }
+        .img15 {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 6450px;
+    left: 750px;
+        }
+        .img16 {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 6725px;
+    left: 150px;
+        }
+        .img17 {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 7250px;
+    left: 100px;
+        }
+        .img18 {
+    width: 38%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 7250px;
+    left: 750px;
+        }
+        .img19 {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 7600px;
+    left: 100px;
+        }
+        .img20 {
+    width: 38%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 7988px;
+    left: 750px;
+        }
+        .img21 {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 8600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+        .img22 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 9700px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+        .img23 {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 10600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+        .img24 {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 11200px;
+    left: 100px;
+        }
+        .img25 {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 11200px;
+    left: 820px;
+        }
+        .img26 {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 11670px;
+    left: 100px;
+        }
+        .img27 {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 12500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+        .fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>England</h1>
+        <h2>From Tower Hamlets to Bournemouth</h2>
+        <a href="nklobucar.html"><img src="nklogowhite.png" class = "logo" ></a>
+
+    </header>
+    <section id="london">
+        <img src="pics/england/towerbridge.JPG" >
+        <p1> Located in East London just north of the Thames, Tower Hamlets blends modern urban 
+            living with historical significance, creating a dynamic and culturally rich area.</p1>
+        <img src="pics/england/IMG_0760.jpg" class= "img2 fade-in">
+        <img src="pics/england/IMG_0739.JPG" class= "img3 fade-in">
+        <img src="pics/england/mural.JPG" class= "img4 fade-in" >
+        <img src="pics/england/paperbag.JPG" class= "img8 fade-in" >
+        <img src="pics/england/shard.JPG" class= "img5 fade-in" >
+        <img src="pics/england/fruitexchange.JPG" class= "img6 fade-in" >
+        <img src="pics/england/cairo.JPG" class= "img7 fade-in" >
+        <img src="pics/england/art.JPG" class= "img9 fade-in" >
+        <img src="pics/england/church.JPG" class= "img10 fade-in" >
+        <img src="pics/england/vic.JPG" class= "img11 fade-in" >
+        <img src="pics/england/westminster.JPG" class= "img12 fade-in" >
+    </section>
+    <section id="bovington">
+        <!-- Main content goes here -->
+        <p2>A 3.5 hour train journey southwest of London lies Bovington, which hosts the largest tank museum in Europe. 
+            Coincidentally, I arrived on the weekend of their annual festival, Tankfest.</p2>
+    <img src="pics/england/sink.JPG" class= "img13 fade-in" >
+    <img src="pics/england/cans.JPG" class= "img14 fade-in" >
+    <img src="pics/england/boomers.JPG" class= "img15 fade-in" >
+    <img src="pics/england/shaving.JPG" class= "img16 fade-in" >
+    <img src="pics/england/amx13.JPG" class= "img21 fade-in" >
+    <img src="pics/england/leopard.JPG" class= "img18 fade-in" >
+    <img src="pics/england/bronx.JPG" class= "img19 fade-in" >
+    <img src="pics/england/gunner.JPG" class= "img20 fade-in" >
+    <img src="pics/england/kv1.JPG" class= "img17 fade-in" >
+</section>
+<section id="Dover">
+    <!-- Main content goes here -->
+    <p3>Standing tall above the English Channel lies Dover, a port town with uniqely bright cliffs. Created from millions of years of limestone formation from the sea floor, exposed after sea levels receded.</p3>
+    <img src="pics/england/dovercliff.jpg" class= "img22 fade-in" >
+    <img src="pics/england/me.JPG" class= "img23 fade-in" >
+    <img src="pics/england/cliff3.JPG" class= "img24 fade-in" >
+    <img src="pics/england/dovercar.JPG" class= "img25 fade-in" >
+    <img src="pics/england/castle.jpeg" class= "img26 fade-in" >
+</section>
+<section id="Dover">
+    <p4>Follow along with my journey, across the channel into <a href="france.html">France</a></p4> 
+    <img src="pics/england/blank.png" class= "img27" >
+</section>
+
+</body>
+<script>
+    // Function to handle the intersection observer callback
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the fade-in class when the image is in the viewport
+                entry.target.style.opacity = 1;
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+    // Create an intersection observer
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+    const elementsToObserve = [
+            'img2', 'img3', 'img4', 'img5', 'img6', 'img7', 'img8', 'img9', 'img10', 
+            'img11', 'img12', 'img13', 'img14', 'img15', 'img16', 'img17', 'img18', 
+            'img19', 'img20', 'img21', 'img22', 'img23', 'img24', 'img25', 'img26',
+            'p1', 'p2', 'p3', 'p4'
+        ];
+
+        // Observe each element
+        elementsToObserve.forEach(element => {
+            const el = document.querySelector(`.${element}.fade-in`);
+            if (el) {
+                observer.observe(el);
+            }
+        });
+</script>
+
+</html>
