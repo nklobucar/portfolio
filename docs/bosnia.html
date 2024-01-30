@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nklobucar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            position: relative; /* Set position to relative for absolute positioning of child elements */
+            align-items: center;
+            justify-content: center;
+        }
+        header, section, footer {
+            padding: 0px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 90px;
+            font-weight: 150;
+            font-family: 'KindelSerif', sans-serif;
+            position: absolute;
+            top: 100px;
+            left: 1100px;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Place on top of the image */
+            color: #ffffff; /* Optionally set text color */
+            text-align: right;
+            line-height: 0.9;
+        }
+        header h2 {
+            font-size: 30px;
+            font-weight: 100;
+            position: absolute;
+            font-family: 'KindelSerif', sans-serif;
+            top: 240px;
+            left: 1060px;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Place on top of the image */
+            color: #ffffff; /* Optionally set text color */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+        .logo {
+    width: 5%; /* Adjust the width as needed */
+    position: absolute;
+    top: 5px;
+    left: 5px; /* Adjust the left value to position img2 on the left side */
+    height: auto;
+    z-index: 1;
+}
+        .fade-in-text1 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            position: absolute;
+            top: 970px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text2 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            position: absolute;
+            top: 5500px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text3 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 8750px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text4 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 10850px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text5 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 13500px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text6 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 12200px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text7 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 14650px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text8 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 16000px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text9 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 19800px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.fade-in-text10 {
+            font-size: 28px;
+            font-weight: 300;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+            color: #333; /* Change the color as needed */
+            margin-top: 150px;
+            top: 22800px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+@keyframes fadeintext {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-text1, .fade-in-text2, .fade-in-text3, .fade-in-text4, .fade-in-text5, .fade-in-text6 {
+    animation: fade-in 5s;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+img {
+            width: 100%;
+            left:0px;
+            height: auto;
+            animation: fadeIn 2s ease-in-out forwards;
+            position: absolute; /* Ensure relative positioning for child elements */
+        }
+        .img2 {
+    width: 35%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 1300px;
+    left: 120px;
+}
+.img3 {
+    left: 800px;
+    width: 35%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 1300px;
+}
+.img4 {
+    width: 65%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 2600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img6 {
+            width: 35%;
+            top: 3200px;
+            left: 740px;
+        }
+        .img5 {
+            width: 35%;
+            top: 3970px;
+            left: 190px;
+        }
+        .img7 {
+            width: 35%;
+            top: 3600px;
+            left: 740px;
+        }
+        .img8 {
+            width: 35%;
+            top: 4370px;
+            left: 190px;
+        }
+        .img9 {
+            width: 35%;
+            top: 4730px;
+            left: 190px;
+        }
+        .img10 {
+            width: 35%;
+            top: 5075px;
+            left: 740px;
+        }
+        .img11 {
+            width: 65%;
+            top: 6200px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img12 {
+            width: 40%;
+            top: 6700px;
+            left: 130px;
+        }
+        .img13 {
+            width: 40%;
+            top: 6700px;
+            left: 730px;
+        }
+        .img14 {
+            width: 50%;
+            top: 7700px;
+            left: 50px;
+        }
+        .img15 {
+            width: 40%;
+            top: 7700px;
+            left: 810px;
+        }
+        .img16 {
+            width: 50%;
+            top: 8200px;
+            left: 50px;
+        }
+        .img17 {
+            width: 70%;
+            top: 9400px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img18 {
+            width: 40%;
+            top: 10000px;
+            left: 100px;
+        }
+        .img19 {
+            width: 45%;
+            top: 10000px;
+            left: 700px;
+        }
+        .img20 {
+            width: 45%;
+            top: 10380px;
+            left: 700px;
+        }
+        .img21 {
+            width: 45%;
+            top: 11300px;
+            left: 50px;
+        }
+        .img22 {
+            width: 45%;
+            top: 11300px;
+            left: 730px;
+        }
+        .img23 {
+            width: 45%;
+            top: 11748px;
+            left: 50px;
+        }
+        .img24 {
+            width: 30%;
+            top: 12500px;
+            left: 720px;
+        }
+        .img25 {
+            width: 30%;
+            top: 12500px;
+            left: 270px;
+        }
+        .img26 {
+            width: 29%;
+            top: 13230px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img27 {
+            width: 55%;
+            top: 13900px;
+            left: 85px;
+        }
+        .img28 {
+            width: 31%;
+            top: 13900px;
+            left: 890px;
+        }
+        .img29 {
+            width: 50%;
+            top: 15000px;
+            left: 650px;
+        }
+        .img30 {
+            width: 40%;
+            top: 15000px;
+            left: 50px;
+        }
+        .img31 {
+            width: 50%;
+            top: 15500px;
+            left: 650px;
+        }
+        .img32 {
+            width: 40%;
+            top: 16400px;
+            left: 120px;
+        }
+        .img33 {
+            width: 40%;
+            top: 16400px;
+            left: 720px;
+        }
+        .img34 {
+            width: 40%;
+            top: 15672px;
+            left: 50px;
+        }
+        .img35 {
+            width: 40%;
+            top: 16800px;
+            left: 120px;
+        }
+        .img36 {
+            width: 40%;
+            top: 17680px;
+            left: 120px;
+        }
+        .img37 {
+            width: 40%;
+            top: 18075px;
+            left: 720px;
+        }
+        .img38 {
+            width: 40%;
+            top: 18130px;
+            left: 120px;
+        }
+        .img39 {
+            width: 40%;
+            top: 18615px;
+            left: 720px;
+        }
+        .img40 {
+            width: 60%;
+            top: 19400px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img41 {
+            width: 45%;
+            top: 20200px;
+            left: 60px;
+        }
+        .img42 {
+            width: 45%;
+            top: 20200px;
+            left: 730px;
+        }
+        .img43 {
+            width: 45%;
+            top: 20660px;
+            left: 60px;
+        }
+        .img44 {
+            width: 40%;
+            top: 21080px;
+            left: 60px;
+        }
+        .img45 {
+            width: 50%;
+            top: 21080px;
+            left: 660px;
+        }
+        .img46 {
+            width: 50%;
+            top: 21490px;
+            left: 660px;
+        }
+        .img47 {
+            width: 60%;
+            top: 22400px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .video-container1 {
+            position: absolute;
+            width: 35%; /* Adjust the width as needed */
+            top: 3200px;
+            left: 190px;
+        }
+        #myVideo1 {
+            width: 100%; /* Adjust the width as needed */
+        }
+        .video-container2 {
+            position: absolute;
+            width: 35%; /* Adjust the width as needed */
+            top: 4290px;
+            left: 740px;
+        }
+        #myVideo2 {
+            width: 100%; /* Adjust the width as needed */
+        }
+        .video-container3 {
+            position: absolute;
+            width: 40%; /* Adjust the width as needed */
+            top: 17280px;
+            left: 720px;
+        }
+        #myVideo3 {
+            width: 100%; /* Adjust the width as needed */
+        }
+        a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}  
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Bosnia i Herzegovina</h1>
+            <h2>Preservation, Reconciliation, and cevapcici</h2>
+            <a href="nklobucar.html"><img src="nklogo.png" class = "logo" ></a>
+
+        </header>
+    <section id="mostar">
+        <img src="pics/bosnia/wideangle.jpg" class ="img fade-in">
+        <div class="fade-in-text1">
+            <p>Leaving the Adriatic behind, I climb into the Dinaric Alps toward the Bosniak heartland. My first destination
+                is Mostar, an ancient city rooted in Ottoman tradition, known for the Stari Most Bridge.
+            </p>
+          </div>
+          <img src="pics/bosnia/ruins.jpg" class ="img2 fade-in">
+          <img src="pics/bosnia/houses.jpg" class ="img3 fade-in">
+          <img src="pics/bosnia/table.JPG" class ="img4 fade-in">
+          <div class="video-container1">
+            <video id="myVideo1" controls autoplay muted playsinline>
+                <source src="pics/bosnia/sunset.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <img src="pics/bosnia/plaque.JPG" class ="img5 fade-in">
+        <img src="pics/bosnia/viewpoint.jpeg" class ="img6 fade-in">
+        <img src="pics/bosnia/sniper.JPG" class ="img7 fade-in">
+        <img src="pics/bosnia/cloth.jpg" class ="img8 fade-in">
+
+        <div class="video-container2">
+            <video id="myVideo2" controls autoplay muted playsinline>
+                <source src="pics/bosnia/jump.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <img src="pics/bosnia/minaret.jpg" class ="img9 fade-in">
+        <img src="pics/bosnia/1981.jpeg" class ="img10 fade-in">
+        <div class="fade-in-text2">
+            <p2>Just 20km from Mostar lies the Blagaj Monastery. Built around 1520 during the Ottoman period, it served as a 
+                residence for the Dervish cults and their leaders. It is situated at the source of the 
+                Buna River, which flows out of a cave beneath the cliffs. Dervishes are followers of a 
+                mystical Islamic tradition known for their ascetic and spiritual practices.</p2>
+          </div>
+          <img src="pics/bosnia/blagaj.jpeg" class ="img11 fade-in">
+          <img src="pics/bosnia/sufihouse.JPG" class ="img12 fade-in">
+          <img src="pics/bosnia/water.JPG" class ="img13 fade-in">
+          <img src="pics/bosnia/insideblagaj.jpg" class ="img14 fade-in">
+          <img src="pics/bosnia/quran.JPG" class ="img15 fade-in">
+          <img src="pics/bosnia/bookshelf.JPG" class ="img16 fade-in">
+          <div class="fade-in-text3">
+            <p2>In the village of Gnojnice outside of Mostar, built into a hill, is an abandoned Yugoslav military hangar. 
+                Once a top-secret facility under Tito, it was discovered in the 1990s during the war and now lies derilict. </p2>
+          </div>
+          <img src="pics/bosnia/hangar.jpeg" class ="img17 fade-in">
+          <img src="pics/bosnia/walking.JPG" class ="img18 fade-in">
+          <img src="pics/bosnia/controlroom.jpeg" class ="img19 fade-in">
+          <img src="pics/bosnia/hangar2.jpeg" class ="img20 fade-in">
+          <div class="fade-in-text4">
+            <p2>After a short drive winding through the hills and valleys of Herzegovina, we stop at the historic village
+                of Počitelj. Its highest point hosts a 13th century fort, used by the Ottomans as a frontier post against
+            the Austro-Hungarians. </p2>
+          </div>
+          <img src="pics/bosnia/pocitelj.jpeg" class ="img21 fade-in">
+          <img src="pics/bosnia/castleview.JPG" class ="img22 fade-in">
+          <img src="pics/bosnia/walkway.jpeg" class ="img23 fade-in">
+          <div class="fade-in-text6">
+            <p2>Falls, Friends, Food.</p2>
+          </div>
+          <img src="pics/bosnia/waterfall.jpg" class ="img25 fade-in">
+          <img src="pics/bosnia/food.JPG" class ="img24 fade-in">
+          <img src="pics/bosnia/friends.jpeg" class ="img26 fade-in">
+          <div class="fade-in-text5">
+            <p2>After spending 4 days exploring the region of Herzegovina, I take the (4 euro) train northeast to the largest and
+                capital city of Bosnia; Sarajevo. Known as one of the most scenic routes in Europe, it did not disappoint. </p2>
+          </div>
+          <img src="pics/bosnia/trainjourney.jpeg" class ="img27 fade-in">
+          <img src="pics/bosnia/trainjourney2.jpg" class ="img28 fade-in">
+          <div class="fade-in-text7">
+            <p2>During the Yugoslav wars in the 1990s, Sarajevo was held under siege for over 4 years, the longest siege of 
+                a capital city in modern history. The scars of these atrocities are still seen today.</p2>
+          </div>
+          <img src="pics/bosnia/damage.jpg" class ="img29 fade-in">
+          <img src="pics/bosnia/damage3.jpeg" class ="img30 fade-in">
+          <img src="pics/bosnia/damage2.jpg" class ="img31 fade-in">
+          <img src="pics/bosnia/srebrenica.JPG" class ="img34 fade-in">
+
+          <div class="fade-in-text8">
+            <p2>Despite this turbulant history, Sarajevo's unique character reflects the Bosniak's strong adherence to Eastern Ottoman 
+                tradition, in an area surrounded by christianity.</p2>
+          </div>
+          <img src="pics/bosnia/cityhall2.jpg" class ="img32 fade-in">
+          <img src="pics/bosnia/sarajevominaret.jpg" class ="img33 fade-in">
+          <div class="video-container3">
+            <video id="myVideo3" controls autoplay muted playsinline>
+                <source src="pics/bosnia/singers.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <img src="pics/bosnia/parliament.jpg" class ="img35 fade-in">
+        <img src="pics/bosnia/apartment1.jpeg" class ="img36 fade-in">
+        <img src="pics/bosnia/baklava.JPG" class ="img37 fade-in">
+        <img src="pics/bosnia/gavrilo.JPG" class ="img38 fade-in">
+        <img src="pics/bosnia/walkingman.jpg" class ="img39 fade-in">
+        <img src="pics/bosnia/baba.jpg" class ="img40 fade-in">
+        <div class="fade-in-text9">
+            <p2>Another unique landmark of Sarajevo is the abandonded bobsled track. Located in the surrounding mountains,
+                it hosted athletes during the Sarajevo 1984 Olympics. Parts were subsequently destroyed in the conflict 10
+                years later, however most still stands today. The Gondola was rebuilt in 2019.</p2>
+          </div>
+          <img src="pics/bosnia/sarajevocablecar.jpeg" class ="img41 fade-in">
+          <img src="pics/bosnia/cablecarview.JPG" class ="img42 fade-in">
+          <img src="pics/bosnia/bobsledmap.JPG" class ="img43 fade-in">
+          <img src="pics/bosnia/track4.jpeg" class ="img44 fade-in">
+          <img src="pics/bosnia/track3.jpeg" class ="img45 fade-in">
+          <img src="pics/bosnia/track2.JPG" class ="img46 fade-in">
+          <img src="pics/bosnia/track1.JPG" class ="img47 fade-in">
+          <div class="fade-in-text10">
+            <p2>Follow along with my journey, heading southeast through the mountains, towards the<b><a href="kotor.html"> Bay of Kotor</a></b>
+            in Montenegro.</p2>
+          </div>
+
+
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const fadeElements = document.querySelectorAll('.fade-in');
+    
+                const handleIntersection = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = 1;
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                };
+    
+                const observerOptions = {
+                    threshold: 0.5,
+                };
+    
+                const fadeObserver = new IntersectionObserver(handleIntersection, observerOptions);
+    
+                fadeElements.forEach(element => {
+                    element.style.opacity = 0;
+                    fadeObserver.observe(element);
+                });
+            });
+
+        
+            // Create an intersection observer
+            const imgObserver = new IntersectionObserver(handleIntersection, { threshold: 0.6});
+        
+            document.addEventListener("DOMContentLoaded", function() {
+                const img = document.querySelector('.img');
+                if (img) {
+                    imgObserver.observe(img);
+                }
+                const img2 = document.querySelector('.img2');
+                if (img2) {
+                    imgObserver.observe(img2);
+                }
+                const img3 = document.querySelector('.img3');
+                if (img3) {
+                    imgObserver.observe(img3);
+                }
+                const img4 = document.querySelector('.img4');
+                if (img4) {
+                    imgObserver.observe(img4);
+                }
+                const img5 = document.querySelector('.img5');
+                if (img5) {
+                    imgObserver.observe(img5);
+                }
+                const img6 = document.querySelector('.img6');
+                if (img6) {
+                    imgObserver.observe(img6);
+                }
+                const img7 = document.querySelector('.img7');
+                if (img7) {
+                    imgObserver.observe(img7);
+                }
+                const img8 = document.querySelector('.img8');
+                if (img8) {
+                    imgObserver.observe(img8);
+                }
+                const img9 = document.querySelector('.img9');
+                if (img9) {
+                    imgObserver.observe(img9);
+                }
+                const img10 = document.querySelector('.img10');
+                if (img10) {
+                    imgObserver.observe(img10);
+                }
+                const img11 = document.querySelector('.img11');
+                if (img11) {
+                    imgObserver.observe(img11);
+                }
+                const img12 = document.querySelector('.img12');
+                if (img12) {
+                    imgObserver.observe(img12);
+                }
+                const img13 = document.querySelector('.img13');
+                if (img13) {
+                    imgObserver.observe(img13);
+                }
+                const img14 = document.querySelector('.img14');
+                if (img14) {
+                    imgObserver.observe(img14);
+                }
+                const img15 = document.querySelector('.img15');
+                if (img15) {
+                    imgObserver.observe(img15);
+                }
+                const img16 = document.querySelector('.img16');
+                if (img16) {
+                    imgObserver.observe(img16);
+                }
+                const img17 = document.querySelector('.img17');
+                if (img17) {
+                    imgObserver.observe(img17);
+                }
+                const img18 = document.querySelector('.img18');
+                if (img18) {
+                    imgObserver.observe(img18);
+                }
+                const img19 = document.querySelector('.img19');
+                if (img19) {
+                    imgObserver.observe(img19);
+                } 
+                const img20 = document.querySelector('.img20');
+                if (img20) {
+                    imgObserver.observe(img20);
+                }
+                const img21 = document.querySelector('.img21');
+                if (img21) {
+                    imgObserver.observe(img21);
+                }
+                const img22 = document.querySelector('.img22');
+                if (img22) {
+                    imgObserver.observe(img22);
+                }
+                const img23 = document.querySelector('.img23');
+                if (img23) {
+                    imgObserver.observe(img23);
+                } const img24 = document.querySelector('.img24');
+                if (img24) {
+                    imgObserver.observe(img24);
+                }
+                const img25 = document.querySelector('.img25');
+                if (img25) {
+                    imgObserver.observe(img25);
+                }
+                const img26 = document.querySelector('.img26');
+                if (img26) {
+                    imgObserver.observe(img26);
+                }
+                const img27 = document.querySelector('.img27');
+                if (img27) {
+                    imgObserver.observe(img27);
+                }
+                const img28 = document.querySelector('.img28');
+                if (img28) {
+                    imgObserver.observe(img28);
+                }
+                const img29 = document.querySelector('.img29');
+                if (img29) {
+                    imgObserver.observe(img29);
+                }
+                const img30 = document.querySelector('.img30');
+                if (img30) {
+                    imgObserver.observe(img30);
+                }
+                const img31 = document.querySelector('.img31');
+                if (img31) {
+                    imgObserver.observe(img31);
+                }
+                const img32 = document.querySelector('.img32');
+                if (img32) {
+                    imgObserver.observe(img32);
+                }
+                const img33 = document.querySelector('.img33');
+                if (img33) {
+                    imgObserver.observe(img33);
+                }
+                const img34 = document.querySelector('.img34');
+                if (img34) {
+                    imgObserver.observe(img34);
+                }
+                const img35 = document.querySelector('.img35');
+                if (img35) {
+                    imgObserver.observe(img35);
+                }
+                const img36 = document.querySelector('.img36');
+                if (img36) {
+                    imgObserver.observe(img36);
+                }
+                const img37 = document.querySelector('.img37');
+                if (img37) {
+                    imgObserver.observe(img37);
+                }
+                const img38 = document.querySelector('.img38');
+                if (img38) {
+                    imgObserver.observe(img38);
+                }
+                const img39 = document.querySelector('.img39');
+                if (img39) {
+                    imgObserver.observe(img39);
+                }
+                const img40 = document.querySelector('.img40');
+                if (img40) {
+                    imgObserver.observe(img40);
+                }
+                const img41 = document.querySelector('.img41');
+                if (img41) {
+                    imgObserver.observe(img41);
+                }
+                const img42 = document.querySelector('.img42');
+                if (img42) {
+                    imgObserver.observe(img42);
+                }
+                const img43 = document.querySelector('.img43');
+                if (img43) {
+                    imgObserver.observe(img43);
+                }
+                const img44 = document.querySelector('.img44');
+                if (img44) {
+                    imgObserver.observe(img44);
+                }
+                const img45 = document.querySelector('.img45');
+                if (img45) {
+                    imgObserver.observe(img45);
+                }
+                const img46 = document.querySelector('.img46');
+                if (img46) {
+                    imgObserver.observe(img46);
+                }
+                const img47 = document.querySelector('.img47');
+                if (img47) {
+                    imgObserver.observe(img47);
+                }
+            });
+        </script>
+<script>
+    // Fade in Videos
+    function handleVideoIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1; // Add the fade-in effect
+                entry.target.play(); // Play the video
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Create an intersection observer for videos
+    const videoObserver = new IntersectionObserver(handleVideoIntersection, { threshold: 0.5 });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Observe each video element
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            video.style.opacity = 0; // Set initial opacity to 0
+            video.style.transition = 'opacity 1.5s ease-in-out'; // Add transition property
+            videoObserver.observe(video);
+        });
+    });
+</script>
+
+
+       <script>
+        // automatically play and restart videos
+        var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        function handleVideoPlay(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.play();
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }
+
+        function handleVideoEnded(event) {
+            event.target.currentTime = 0; // Restart the video from the beginning
+            event.target.play();
+        }
+
+        var videos = document.querySelectorAll('video');
+        var observer = new IntersectionObserver(handleVideoPlay, options);
+        videos.forEach(video => {
+            observer.observe(video);
+            video.addEventListener('ended', handleVideoEnded);
+        });
+</script>
+
+    </body>
