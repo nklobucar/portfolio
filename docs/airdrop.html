@@ -6,43 +6,67 @@
     <title>Chronicles of Movement</title>
      <link rel="icon" href="./img/nklogowhite.png" type="image/x-icon">
     <style>
-        body {
+          body {
             margin: 0;
             padding: 0;
-            background-image: url('./img/maps.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: 'SF Pro', sans-serif;
-            color: #ffffff;
-        }
-        header, section, footer {
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 40px;
-            font-weight: 100;
-            animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
+            color: #000000;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 100vw; 
+            height: 100vh;
+          }
+    .text1 {
+    margin-bottom: 0;
+    font-size: 3vw;
+    font-weight: 300;
+    position: absolute;
+    font-family: 'SF Pro', sans-serif;
+    top: 1vh;
+    left: 35%;
+    z-index: 2;
+    color: #ffffff;
+    white-space: nowrap;
+    animation: fadeIn 4s ease-in-out forwards;
+ }
+ .text2 {
+    margin-bottom: 0;
+    font-size: 2vw;
+    font-weight: 250;
+    position: absolute;
+    font-family: 'SF Pro', sans-serif;
+    top: 13vh;
+    left: 23%;
+    z-index: 2;
+    color: #ffffff;
+    white-space: nowrap;
+    animation: fadeIn 4s ease-in-out forwards;
+    }
 
-        }
-        header h2 {
-            margin-bottom: 0;
-            font-size: 26px;
-            font-weight: 100;
-            animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
-        }
-        section {
-            margin: 20px;
-            position: relative; /* Set position to relative for absolute positioning of the button */
-        }
-        img {
-            width: 100%;
-            max-width: 350px;
-            height: auto;
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards;
-        }
+        .airdrop {
+    position: absolute;
+    width: 23%;
+    max-width: 1000px;
+    height: auto;
+    left: 38%;
+    top: 28%;
+    z-index: 2;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+.airdrop a {
+    display: block;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    width: 50%;
+    height: 10%;
+}
+
+.airdrop img {
+    width: 100%;
+    height: auto;
+}
         .img2 {
     width: 5%; /* Adjust the width as needed */
     height: auto;
@@ -51,60 +75,30 @@
     left: 5px; /* Adjust the left value to position img2 on the left side */
     z-index: 2;
     opacity: 1;
-}
-p {
-    font-size: 20px;
-            font-weight: 100;
-            animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
-}
-        button {
-            width: 150px; /* Set the width as needed */
-            height: 45px; /* Set the height as needed */
-            position: absolute;
-            bottom: 80px; /* Adjust the distance from the bottom as needed */
-            right: 540px; /* Adjust the distance from the right as needed */
-            margin-top: 50px;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            cursor: pointer;
+} 
+.backdrop {
+            width: 100%;
+            animation: fadeIn 2s ease-in-out forwards;
+            z-index: 1;
         }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        /* Add a class to the button to make it visible when desired */
-        .visible {
-            opacity: 0;
-        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>chronicles of movement:</h1>
-        <h2>a collection of images taken across the european continent in 2023.</h2>
-    </header>
-    <a href="index.html"><img src="./img/nklogowhite.png" class = "img2" ></a>
-    <section id="about">
-        <img src="./img/airdrop.png" alt="A collection of images taken on iPhone 11">
-        <button id="nextButton" class="visible" onclick="location.href='map.html'">Next</button>
-        <p>
-            All images taken on iPhone 11
-        </p>
+    <img src="./maps.jpg" class="backdrop fadeIn" alt="maps">
+    <div class="text1">
+        <p>chronicles of movement:</p>
+    </div>
+    <div class="text2">
+        <p>a collection of images taken across the european continent in 2023</p>
+    </div>
+    <div class="airdrop">
+        <img src="./airdrop.png" alt="image" />
+        <a href="map.html"></a>
+    </div>
+    <a href="index.html"><img src="./nklogowhite.png" class = "img2" ></a>
+
+</body>
     </section>
-    
-    <script>
-        // You can use JavaScript to add or remove the 'visible' class to control button visibility
-        // For example, you can trigger it after the image has fully faded in.
-        document.addEventListener('DOMContentLoaded', function () {
-            var button = document.getElementById('nextButton');
-            setTimeout(function () {
-                button.classList.add('visible');
-            }, 2000); // Adjust the delay as needed
-        });
-    </script>
 </body>
 </html>
