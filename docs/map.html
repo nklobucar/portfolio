@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose a Destination</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
-    <link rel="icon" href="nklogowhite.png" type="image/x-icon">
+    <link rel="icon" href="./img/nklogowhite.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
     <style>
         body {
@@ -172,7 +172,7 @@
     left: 100%; /* Adjusted to left: 0 */
     transform: translateX(-50%);
     z-index: 0; /* Adjusted z-index */
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)), url('mapcropped.jpg');
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)), url('./img/mapcropped.jpg');
     background-size: cover;
 }
 
@@ -184,11 +184,11 @@
     <div id="map"></div>
     <a href="index.html"><img src="nklogo.png" class = "logo" ></a>
     <div class="couponcode">
-        <img src="pics/takeoff/walking.jpeg" class="couponimage fade-in">
+        <img src="./img/takeoff/walking.jpeg" class="couponimage fade-in">
         <span class="coupontooltip"> Pearson Airport, Toronto</span>
     </div>
     <div class="couponcode2">
-        <img src="pics/takeoff/supplies.JPG" class="img2 fade-in">
+        <img src="./img/takeoff/supplies.JPG" class="img2 fade-in">
         <span class="coupontooltip2"> 40L, 6.8kg</span>
     </div>
     <p class="p1">choose a destination (in progress):</p>
@@ -247,7 +247,7 @@
                 image: new ol.style.Icon({
                     anchor: [0.5, 1],
                     crossOrigin: 'anonymous',
-                    src: 'marker-icon2.png',
+                    src: './img/marker-icon2.png',
                     size: [30, 50],
                     cursor: 'pointer'
                 })
