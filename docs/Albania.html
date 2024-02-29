@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albania</title>
+    <link rel="icon" href="nklogowhite.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .logo {
+            width: 5%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 2;
+            opacity: 1;
+        }
+
+        header h1 {
+            font-size: 8vw;
+            font-weight: 150;
+            font-family: 'Helvetica Neue', sans-serif;
+            position: absolute;
+            top: 0%;
+            left: 78%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: #ffffff;
+            text-align: right;
+            line-height: 0.9;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        header h2 {
+            font-size: 2vw;
+            font-weight: 100;
+            font-family: 'Helvetica Neue', sans-serif;
+            position: absolute;
+            top: 15%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: #ffffff;
+            white-space: nowrap;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .video-container1 {
+            position: absolute;
+            width: 30%; /* Adjust the width as needed */
+            top: 415%;
+            left: 55%;
+        }
+        #myVideo1 {
+            width: 100%; /* Adjust the width as needed */
+        }
+        .video-container2 {
+            position: absolute;
+            width: 30%; /* Adjust the width as needed */
+            top: 761%;
+            left: 59%;
+        }
+        #myVideo2 {
+            width: 100%; /* Adjust the width as needed */
+        }
+        .video-container3 {
+            position: absolute;
+            width: 30%; /* Adjust the width as needed */
+            top: 1750%;
+            left: 63%;
+        }
+        #myVideo3 {
+            width: 100%; /* Adjust the width as needed */
+        }
+        .video-container4 {
+            position: absolute;
+            width: 35%; /* Adjust the width as needed */
+            top: 2380%;
+            left: 8%;
+        }
+        #myVideo4 {
+            width: 100%; /* Adjust the width as needed */
+        }
+        .text-container1 {
+            width: 50%;
+            position: absolute;
+            top: 135%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out forwards;
+            text-align: center;
+        }
+        .fade-in-text1 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container2 {
+            width: 38%;
+            position: absolute;
+            top: 285%;
+            left: 10%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text2 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: right;
+        }
+        .text-container3 {
+            width: 40%;
+            position: absolute;
+            top: 390%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out forwards;
+            text-align: center;
+        }
+        .fade-in-text3 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container4 {
+            width: 50%;
+            position: absolute;
+            top: 650%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text4 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container5 {
+            width: 50%;
+            position: absolute;
+            top: 980%;
+            left: 30%;
+            text-align: right;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text5 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container6 {
+            width: 45%;
+            position: absolute;
+            top: 1088%;
+            left: 75%;
+            text-align: left;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text6 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container7 {
+            width: 45%;
+            position: absolute;
+            top: 1520%;
+            left: 30%;
+            text-align: right;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text7 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container8 {
+            width: 45%;
+            position: absolute;
+            top: 1950%;
+            left: 8%;
+            text-align: right;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text8 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container9 {
+            width: 40%;
+            position: absolute;
+            top: 2200%;
+            left: 8%;
+            text-align: right;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text9 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container10 {
+            width: 50%;
+            position: absolute;
+            top: 2260%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text10 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container11 {
+            width: 40%;
+            position: absolute;
+            top: 2465%;
+            left: 45%;
+            text-align: left;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text11 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container12 {
+            width: 40%;
+            position: absolute;
+            top: 2500%;
+            left: 50%;
+            transform: translate(-50%, -50%);            
+            text-align: center;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text12 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container13 {
+            width: 40%;
+            position: absolute;
+            top: 2600%;
+            left: 50%;
+            transform: translate(-50%, -50%);            
+            text-align: center;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text13 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        img {
+            width: 100%;
+            left: 0%;
+            height: auto;
+            animation: fadeIn 2s ease-in-out forwards;
+            position: absolute;
+        }
+        .img2 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 170%;
+            left: 9%;
+        }
+        .img3 {
+            top: 170%;
+            left: 51%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+
+        .img4 {
+            top: 227.5%;
+            left: 51%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+
+        .img5 {
+            top: 290%;
+            left: 51%;
+            width: 30%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img6 {
+            top: 415%;
+            left: 14%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img7 {
+            top: 580%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 65%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img8 {
+            top: 670%;
+            left: 10%;
+            width: 38%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img9 {
+            top: 670%;
+            left: 49%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img10 {
+            top: 862%;
+            left: 14.5%;
+            width: 30%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img11 {
+            top: 815%;
+            left: 10%;
+            width: 48%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img12 {
+            top: 761%;
+            left: 10%;
+            width: 48%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img13 {
+            top: 862%;
+            left: 45.5%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img14 {
+            top: 1020%;
+            left: 15%;
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img15 {
+            top: 965%;
+            left: 58%;
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img16 {
+            top: 1120%;
+            left: 10%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img17 {
+            top: 1120%;
+            left: 55%;
+            width: 33%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img18 {
+            top: 1190%;
+            left: 10%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img19 {
+            top: 1220%;
+            left: 55%;
+            width: 33%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img20 {
+            top: 1250%;
+            left: 10%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img21 {
+            top: 1280%;
+            left: 55%;
+            width: 33%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img22 {
+            top: 1370%;
+            left: 55%;
+            width: 33%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img23 {
+            top: 1390%;
+            left: 10%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img24 {
+            top: 1460%;
+            left: 55%;
+            width: 33%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img25 {
+            top: 1590%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img26 {
+            top: 1650%;
+            left: 8%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img27 {
+            top: 1653%;
+            left: 52%;
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img28 {
+            top: 1750%;
+            left: 8%;
+            width: 50%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img29 {
+            top: 1810%;
+            left: 15%;
+            width: 30%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img30 {
+            top: 1852%;
+            left: 55%;
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }  
+        .img31 {
+            top: 1950%;
+            left: 55%;
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img32 {
+            top: 2050%;
+            left: 55%;          
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img33 {
+            top: 2000%;
+            left: 5%;           
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img34 {
+            top: 2120%;
+            left: 53%;          
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img35 {
+            top: 2140%;
+            left: 5%;          
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img36 {
+            top: 2330%;
+            left: 50%;
+            transform: translate(-50%, -50%);            
+            width: 70%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img37 {
+            top: 2400%;
+            left: 53%;          
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+        .img38 {
+            top: 2540%;
+            left: 50%;  
+            transform: translate(-50%, -50%);                    
+            width: 70%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 2.5s ease-in-out;
+        }
+
+        .fade-in.active {
+            opacity: 1;
+        }
+        a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}  
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Albania</h1>
+    <h2>Bunkers, Brutalism, and Balkan Peaks</h2>
+    <a href="index.html"><img src="nklogowhite.png" class="logo"></a>
+</header>
+<section id="Shkoder">
+    <img src="pics/albania/cliffs2.jpeg" class="img fade-in">
+    <div class="text-container1 fade-in">
+        <div class="fade-in-text1">
+            <p>My days of relaxation on the beaches of Montenegro had come to an end, for it was time to (once again)
+                put my faith in Balkan bus drivers and weave through the mountains. I cross the southern border and
+                head for Shkodër, a small city in northern Albania.</p>
+        </div>
+    </div>
+    <div class="text-container2 fade-in">
+        <div class="fade-in-text2">
+            <p>Shkodër is the base for all mountain excursions in northern Albania, the beginning of the famed 'Peaks
+                of the Balkans' trail. My hostel was able to provide a rough itinerary, however it proved to be quite
+                convoluted. I was given a series of interconnected guest houses along my 3 day trek, as well as the
+                various versions of transportation required to reach my starting point. With no confirmation of
+                availability, I decided to take my chances.</p>
+        </div>
+    </div>
+    <div class="text-container3 fade-in">
+        <div class="fade-in-text3">
+            <p>Reaching the first guesthouse in the town of Valbonë required a trip up Komani Lake, a narrow fjord that
+                descends from the peaks.
+            </p>
+        </div>
+    </div>
+    <div class="text-container4 fade-in">
+        <div class="fade-in-text4">
+            <p>After a full day of travel, I arrive in Valbonë for sunset.</p>
+        </div>
+    </div>
+    <div class="text-container5 fade-in">
+        <div class="fade-in-text5">
+            <p>The Peaks of the Balkans trail winds through remote, mountainous regions of the Western Balkans. 
+                Only in the past decade has this trail become accessible, as it traverses Albania, Kosovo, and Montenegro
+                in a circular loop. </p>
+        </div>
+    </div>
+    <div class="text-container6 fade-in">
+        <div class="fade-in-text6">
+            <p>The Albanian section offers fast elevation changes, freezing streams, and homemade chai.</p>
+        </div>
+    </div> <div class="text-container7 fade-in">
+        <div class="fade-in-text7">
+            <p>15km southwest of Valbonë lies the mountain village of Theth. After 7 hours of walking, I descend into 
+                this hidden valley.
+            </p>
+        </div>
+    </div>
+ <div class="text-container8 fade-in">
+    <div class="fade-in-text8">
+        <p>After a warm Tavë Kosi and some rest, I pack up and head out to the Blue Eye Canyon, just 10km south 
+            of Theth.</p>
+    </div>
+</div>
+
+    <img src="pics/albania/shkoder.JPG" class="img2 fade-in">
+    <img src="pics/albania/shkoder2.jpg" class="img3 fade-in">
+    <img src="pics/albania/Shkoder4.jpg" class="img4 fade-in">
+    <img src="pics/albania/itinerary.JPG" class="img5 fade-in">
+    <img src="pics/albania/boatride2.JPG" class="img6 fade-in">
+    <img src="pics/albania/boatride.JPG" class="img7 fade-in">
+    <img src="pics/albania/valbonesign.JPG" class="img8 fade-in">
+    <img src="pics/albania/valboneGH.JPG" class="img9 fade-in">
+    <img src="pics/albania/fire.JPG" class="img10 fade-in">
+    <img src="pics/albania/valboneGH2.jpg" class="img11 fade-in">
+    <img src="pics/albania/valbonesunset.JPG" class="img12 fade-in">
+    <img src="pics/albania/bunker.JPG" class="img13 fade-in">
+    <img src="pics/albania/hiking3.JPG" class="img14 fade-in">
+    <img src="pics/albania/hiking2.jpg" class="img15 fade-in">
+    <img src="pics/albania/hiking1.jpeg" class="img16 fade-in">
+    <img src="pics/albania/sign.JPG" class="img17 fade-in">
+    <img src="pics/albania/hiking6.JPG" class="img18 fade-in">
+    <img src="pics/albania/hiking7.jpg" class="img19 fade-in">
+    <img src="pics/albania/dog.jpg" class="img20 fade-in">
+    <img src="pics/albania/mountain.JPG" class="img21 fade-in">
+    <img src="pics/albania/flag.JPG" class="img22 fade-in">
+    <img src="pics/albania/darts.JPG" class="img23 fade-in">
+    <img src="pics/albania/peaks.JPG" class="img24 fade-in">
+    <img src="pics/albania/thethvalley.JPG" class="img25 fade-in">
+    <img src="pics/albania/farmer.JPG" class="img26 fade-in">
+    <img src="pics/albania/pole.JPG" class="img27 fade-in">
+    <img src="pics/albania/thethchurch3.jpeg" class="img28 fade-in">
+    <img src="pics/albania/thethchurch2.JPG" class="img29 fade-in">
+    <img src="pics/albania/guesthouse.JPG" class="img30 fade-in">
+    <img src="pics/albania/blueeye.JPG" class="img31 fade-in">
+    <img src="pics/albania/blueyewater.jpeg" class="img32 fade-in">
+    <img src="pics/albania/blueeyewater2.JPG" class="img33 fade-in">
+    <img src="pics/albania/hikingfriends.JPG" class="img34 fade-in">
+    <img src="pics/albania/blueeye2.jpg" class="img35 fade-in">
+
+    <div class="video-container1">
+        <video id="myVideo1" controls autoplay muted playsinline>
+            <source src="pics/albania/boatvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-container2">
+        <video id="myVideo2" controls autoplay muted playsinline>
+            <source src="pics/albania/driving.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-container3">
+        <video id="myVideo3" controls autoplay muted playsinline>
+            <source src="pics/albania/thethchurch.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</section>
+<section id="Tirana">
+<div class="text-container9 fade-in">
+    <div class="fade-in-text9">
+        <p>With my trek coming to an end, I catch the mountain bus from Theth to Shkodër, then to Albania's capital,
+            Tirana. 
+        </p>
+    </div>
+</div>
+<div class="text-container10 fade-in">
+    <div class="fade-in-text10">
+        <p>
+            Tirana in the 20th century saw a kaleidoscope of change, transitioning from a quiet Ottoman town under
+            monarchist rule to a repressive, hermit kingdom run by a paranoid, communist dictator. Today, Tirana is known
+            for its brutalist architecture and vast quantities of bunkers.
+        </p>
+    </div>
+</div>
+<div class="text-container11 fade-in">
+<div class="fade-in-text11">
+    <p>Unfortunately, my stay in Tirana was quite short. It was once again time to catch the local bus, heading
+        east towards North Macedonia.
+    </p>
+</div>
+</div>
+<div class="text-container12 fade-in">
+<div class="fade-in-text12">
+    <p>Photo taken near Lake Ohrid, eastern Albania. 
+    </p>
+</div>
+</div>
+<div class="text-container13 fade-in">
+    <div class="fade-in-text13">
+        <p>Follow along with my journey, heading east towards <b><a href="bulgaria.html">Bulgaria.</a></b>
+        </p>
+    </div>
+</div>
+<img src="pics/albania/museum.jpeg" class="img36 fade-in">
+<img src="pics/albania/bunkermuseum.jpeg" class="img37 fade-in">
+<img src="pics/albania/donkey.jpg" class="img38 fade-in">
+
+<div class="video-container4">
+    <video id="myVideo4" controls autoplay muted playsinline>
+        <source src="pics/albania/sheets.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</section>
+<script>
+    const observerOptions = {
+        threshold: 0.5 // Adjust as needed
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active'); // Add 'active' class to fade in
+            }
+        });
+    }, observerOptions);
+
+    // OBSERVING EACH TEXT CONTAINER SEPARATELY
+    const textContainers = document.querySelectorAll('.text-container1, .text-container2, .text-container3, .text-container4, .text-container5, .text-container6, .text-container7, .text-container8, .text-container9, .text-container10,.text-container11, .text-container12, .text-container13');
+    textContainers.forEach(textContainer => {
+        observer.observe(textContainer);
+    });
+
+    // OBSERVING IMAGE ELEMENTS
+    const imageElements = document.querySelectorAll('.img, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14,.img15,.img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24,.img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32, .img33, .img34, .img35, .img36, .img37, .img38, .img39, .img40');
+    imageElements.forEach(imageElement => {
+        observer.observe(imageElement);
+    });
+</script>
+<script>
+    // Fade in Videos
+    function handleVideoIntersection(entries, videoObserver) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1; // Add the fade-in effect
+                entry.target.play(); // Play the video
+                videoObserver.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Create an intersection observer for videos
+    const videoObserver = new IntersectionObserver(handleVideoIntersection, { threshold: 0.5 });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Observe each video element
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            video.style.opacity = 0; // Set initial opacity to 0
+            video.style.transition = 'opacity 1.5s ease-in-out'; // Add transition property
+            videoObserver.observe(video);
+        });
+    });
+</script>
+       <script>
+        // automatically play and restart videos
+        var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        function handleVideoPlay(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.play();
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }
+
+        function handleVideoEnded(event) {
+            event.target.currentTime = 0; // Restart the video from the beginning
+            event.target.play();
+        }
+
+        var videos = document.querySelectorAll('video');
+        var observer2 = new IntersectionObserver(handleVideoPlay, options);
+        videos.forEach(video => {
+            observer2.observe(video);
+            video.addEventListener('ended', handleVideoEnded);
+        });
+</script>
+
+</body>
+</html>
