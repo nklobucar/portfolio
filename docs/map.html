@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose a Destination</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
-    <link rel="icon" href="./img/nklogowhite.png" type="image/x-icon">
+    <link rel="icon" href="nklogowhite.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
     <style>
         body {
@@ -20,7 +20,8 @@
             height: 100vh;
         }
         .couponcode:hover .tooltip,
-        .couponcode2:hover .tooltip2 {
+        .couponcode2:hover .tooltip2,
+        .couponcode3:hover .tooltip3 {
             display: block;
         }
 
@@ -28,7 +29,7 @@
             display: none;
             background: #ffffff;
             padding: 0px;
-            z-index: 1000;
+            z-index: 3;
             width: 170px;
             height: 20px;
             font-size: 15px;
@@ -40,8 +41,20 @@
             display: none;
             background: #ffffff;
             padding: 0px;
-            z-index: 1000;
+            z-index: 3;
             width: 80px;
+            height: 20px;
+            font-size: 15px;
+            font-weight: 200;
+            position: absolute;
+            font-family: 'SF Pro', sans-serif;
+        }
+        .coupontooltip3 {
+            display: none;
+            background: #ffffff;
+            padding: 0px;
+            z-index: 3;
+            width: 150px;
             height: 20px;
             font-size: 15px;
             font-weight: 200;
@@ -50,32 +63,78 @@
         }
 
         .couponcode img,
-        .couponcode2 img {
+        .couponcode2 img,
+        .couponcode3 img {
             position: absolute;
             height: auto;
             cursor: pointer;
         }
 
         .couponcode img {
-            width: 20%;
-            top: 20%;
-            left: 1%;
+            width: 20.3%;
+            top: 15%;
+            left: 5%;
+            height: auto;
+
         }
 
         .couponcode2 img {
             width: 25%;
-            top: 20%;
-            left: 22%;
-        }
+            top: 57%;
+            left: 26%;
+            height: auto;
 
+        }
+        .couponcode3 img {
+            width: 39%;
+            top: 59%;
+            left: 56%;
+            height: auto;
+
+        }
+        .white {
+            width: 48%;
+            height: 80%;
+            margin: auto;
+            position: absolute;
+            top: 13%;
+            left: 4%;
+            z-index: -1;
+            border-radius: 2%;
+
+
+        }
+        .white2 {
+            width: 41%;
+            height: 80%;
+            margin: auto;
+            position: absolute;
+            top: 13%;
+            left: 55%;
+            z-index: -1;
+            border-radius: 2%;
+
+
+        }
+        #map {
+            position: absolute;
+            top: 15%;
+            left: 56%;
+            width: 38%;
+            bottom: 44%;
+            border: 0.5vw solid #c09f9f; /* Set the border width and color */
+            border-radius: 20px; /* Optional: Add border radius for rounded corners */
+            animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
+        }
+        
 .p1 {
             margin-bottom: 0;
-            font-size: 2.7vw;
-            font-weight: 300;
+            font-size: 2.5vw;
+            font-weight: 200;
             position: absolute;
-            font-family: 'SF Pro', sans-serif;
-            top: 15%;
-            left: 76%;
+            font-family: 'Helvetica Neue', sans-serif;
+            top: 2%;
+            left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2; /* Place on top of the image */
             color: #ffffff; /* Optionally set text color */
@@ -86,11 +145,11 @@
         .p2 {
             margin-bottom: 0;
             font-size: 2.7vw;
-            font-weight: 450;
+            font-weight: 400;
             position: absolute;
             font-family: 'SF Pro', sans-serif;
-            top: 52.5%;
-            left: 27.25%;
+            top: 25%;
+            left: 31%;
             transform: translate(-50%, -50%);
             z-index: 2; /* Place on top of the image */
             color: #000000; /* Optionally set text color */
@@ -104,12 +163,12 @@
             font-weight: 300;
             position: absolute;
             font-family: 'SF Pro', sans-serif;
-            top: 63%;
-            left: 22.4%;
+            top: 35%;
+            left: 26%;
             z-index: 2; /* Place on top of the image */
             color: #000000; /* Optionally set text color */
             display: block;
-            max-width: 400px;
+            max-width: 23%;
             animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
 
         }
@@ -120,8 +179,8 @@
             position: absolute;
             font-family: 'SF Pro', sans-serif;
             font-style: italic;
-            top: 60%;
-            left: 25%;
+            top: 32%;
+            left: 29%;
             transform: translate(-50%, -50%);
             z-index: 2; /* Place on top of the image */
             color: #000000; /* Optionally set text color */
@@ -130,17 +189,7 @@
             animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
 
         }
-        #map {
-            position: absolute;
-            top: 25%;
-            bottom: 0;
-            left: 55%;
-            width: 40%;
-            height: 50%;
-            border: 0.8vw solid #ffffff; /* Set the border width and color */
-            border-radius: 20px; /* Optional: Add border radius for rounded corners */
-            animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
-        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -169,10 +218,9 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: 100%; /* Adjusted to left: 0 */
+    left: 50%; /* Adjusted to left: 0 */
     transform: translateX(-50%);
-    z-index: 0; /* Adjusted z-index */
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)), url('./img/mapcropped.jpg');
+    z-index: -1; /* Adjusted z-index */
     background-size: cover;
 }
 
@@ -180,16 +228,22 @@
     </style>
 </head>
 <body>
-    <div class="backdrop fade-in"></div>
+    <img src="maps.jpg" class="backdrop fadeIn" alt="maps">
     <div id="map"></div>
-    <a href="index.html"><img src="./img/nklogo.png" class = "logo" ></a>
+    <a href="index.html"><img src="nklogowhite.png" class = "logo" ></a>
     <div class="couponcode">
-        <img src="./img/walking.jpeg" class="couponimage fade-in">
+        <img src="pics/takeoff/walking.jpeg" class="couponimage fade-in">
         <span class="coupontooltip"> Pearson Airport, Toronto</span>
     </div>
     <div class="couponcode2">
-        <img src="./img/supplies.JPG" class="img2 fade-in">
+        <img src="pics/takeoff/supplies.JPG" class="img2 fade-in">
+
         <span class="coupontooltip2"> 40L, 6.8kg</span>
+    </div>
+    <div class="couponcode3">
+        <img src="pics/takeoff/hunty.jpeg" class="img3 fade-in">
+
+        <span class="coupontooltip3">Boyne Valley, Caledon</span>
     </div>
     <p class="p1">choose a destination (in progress):</p>
     <p class="p2">one•bag</p>
@@ -197,6 +251,9 @@
     <p class="p3">the practice of minimalist packing so that everything 
         can be carried on your body in a single backpack that meets 
         international size and weight requirements.</p>
+        <img src="pics/takeoff/whiteback.jpg" class="white fade-in">
+        <img src="pics/takeoff/whiteback.jpg" class="white2 fade-in">
+
 
 
     <script>
@@ -249,7 +306,7 @@
                 image: new ol.style.Icon({
                     anchor: [0.5, 1],
                     crossOrigin: 'anonymous',
-                    src: './img/marker-icon2.png',
+                    src: 'marker-icon2.png',
                     size: [30, 50],
                     cursor: 'pointer'
                 })
@@ -287,6 +344,7 @@ document.addEventListener('mousemove', function (e) {
     tooltip.style.top = (e.pageY + 10) + 'px';
 });
 
+// Event listeners for tooltip2
 var couponImage2 = document.querySelector('.couponcode2 .img2');
 var couponTooltip2 = document.querySelector('.couponcode2 .coupontooltip2');
 
@@ -303,6 +361,24 @@ document.addEventListener('mousemove', function (e) {
     couponTooltip2.style.top = (e.pageY + 10) + 'px';
 });
 
+// Event listeners for tooltip3
+var couponImage3 = document.querySelector('.couponcode3 .img3');
+var couponTooltip3 = document.querySelector('.couponcode3 .coupontooltip3');
+
+couponImage3.addEventListener('mouseenter', function () {
+    couponTooltip3.style.display = 'block';
+});
+
+couponImage3.addEventListener('mouseleave', function () {
+    couponTooltip3.style.display = 'none';
+});
+
+document.addEventListener('mousemove', function (e) {
+    couponTooltip3.style.left = (e.pageX + 10) + 'px';
+    couponTooltip3.style.top = (e.pageY + 10) + 'px';
+});
+
+
     // Function to handle the intersection observer callback
     function handleIntersection(entries, observer) {
             entries.forEach(entry => {
@@ -317,7 +393,7 @@ document.addEventListener('mousemove', function (e) {
         const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
     
         const elementsToObserve = [
-        'couponimage',  'img2' , 'backdrop',
+        'couponimage',  'img2' , 'backdrop','white','white2', 'img3',
                    ];
     
             // Observe each element
