@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulgaria</title>
+    <link rel="icon" href="nklogowhite.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .logo {
+            width: 5%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 2;
+            opacity: 1;
+        }
+        header h1 {
+            font-size: 7.8vw;
+            font-weight: 150;
+            font-family: 'Helvetica Neue', sans-serif;
+            position: absolute;
+            top: 0%;
+            left: 78%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: #ffffff;
+            text-align: right;
+            line-height: 0.9;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        header h2 {
+            font-size: 2.5vw;
+            font-weight: 100;
+            font-family: 'Helvetica Neue', sans-serif;
+            position: absolute;
+            top: 18%;
+            left: 78%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: #ffffff;
+            white-space: nowrap;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .backdrop {
+            width: 100%;
+            left: 0%;
+            height: auto;
+            animation: fadeIn 2s ease-in-out forwards;
+            position: absolute;
+        }
+        a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+} 
+        .text-container1 {
+            width: 50%;
+            position: absolute;
+            top: 125%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out forwards;
+            text-align: center;
+        }
+        .fade-in-text1 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+        }
+        .text-container2 {
+            width: 45%;
+            position: absolute;
+            top: 148%;
+            left: 52%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text2 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: left;
+        }
+        .text-container3 {
+            width: 40%;
+            position: absolute;
+            top: 455%;
+            left: 52%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text3 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: left;
+        }
+        .text-container4 {
+            width: 40%;
+            position: absolute;
+            top: 495%;
+            left: 52%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text4 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: left;
+        }
+        .text-container5 {
+            width: 40%;
+            position: absolute;
+            top: 530%;
+            left: 10%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text5 {
+            font-size: 2.5vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: right;
+        }
+        .text-container6 {
+            width: 40%;
+            position: absolute;
+            top: 540%;
+            left: 10%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text6 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: right;
+        }
+        .text-container7 {
+            width: 40%;
+            position: absolute;
+            top: 940%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text7 {
+            font-size: 2.5vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        .text-container8 {
+            width: 80%;
+            position: absolute;
+            top: 960%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text8 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        .text-container9 {
+            width: 30%;
+            position: absolute;
+            top: 1575%;
+            left: 8%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text9 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: right;
+        }
+        .text-container10 {
+            width: 40%;
+            position: absolute;
+            top: 1700%;
+            left: 40%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text10 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: left;
+        }
+        .text-container11 {
+            width: 40%;
+            position: absolute;
+            top: 1980%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text11 {
+            font-size: 2.5vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        .text-container12 {
+            width: 70%;
+            position: absolute;
+            top: 1995%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text12 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        .text-container13 {
+            width: 40%;
+            position: absolute;
+            top: 2570%;
+            left: 55%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text13 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: left;
+        }
+        .text-container14 {
+            width: 40%;
+            position: absolute;
+            top: 2680%;
+            left: 10%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text14 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: right;
+        }
+        .text-container15 {
+            width: 40%;
+            position: absolute;
+            top: 3110%;
+            left: 10%;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text15 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: right;
+        }
+        .text-container16 {
+            width: 40%;
+            position: absolute;
+            top: 3300%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text16 {
+            font-size: 2vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        .text-container17 {
+            width: 40%;
+            position: absolute;
+            top: 3376%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .fade-in-text17 {
+            font-size: 1.5vw;
+            font-weight: 200;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        .img2 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 150%;
+            left: 8%;
+        }
+        .img3 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 175%;
+            left: 52%;
+        }
+        .img4 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 220%;
+            left: 8%;
+        }
+        .img5 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 242%;
+            left: 52%;
+        }
+        .img6 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 330%;
+            left: 8%;
+        }
+        .img7 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 350%;
+            left: 52%;
+        }
+        .img8 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 440%;
+            left: 8%;
+        }
+        .img9 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 530%;
+            left: 52%;
+        }
+        .img10 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 650%;
+            left: 12%;
+        }
+        .img11 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 650%;
+            left: 55%;
+        }
+        .img12 {
+            width: 45%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 745%;
+            left: 45%;
+        }
+        .img13 {
+            width: 30%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 740%;
+            left: 12%;
+        }
+        .img14 {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 870%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+        }
+        .img15 {
+            width: 80%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1155%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+        }
+        .img16 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 980%;
+            left: 8%;
+        }
+        .img17 {
+            width: 45%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 980%;
+            left: 50%;
+        }
+        .img18 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1052%;
+            left: 8%;
+        }
+        .img19 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1270%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+        }
+        .img20 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1340%;
+            left: 52%;       
+        }
+        .img21 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1348%;
+            left: 8%;
+        }
+        .img22 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1450%;
+            left: 8%;
+        }
+        .img23 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1450%;
+            left: 52%;
+        }
+        .img24 {
+            width: 45%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1570%;
+            left: 40%;
+        }
+        .img25 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1725%;
+            left: 8%;
+        }
+        .img26 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1730%;
+            left: 52%;
+        }
+        .img27 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 1900%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+        }
+        .img28 {
+            width: 75%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2050%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+        }
+        .img29 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2100%;
+            left: 12%;
+        }
+        .img30 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2105%;
+            left: 53%;
+        }
+        .img31 {
+            width: 38%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2220%;
+            left: 11%;
+        }
+        .img32 {
+            width: 38%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2220%;
+            left: 51%;
+        }
+        .img33 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2320%;
+            left: 8%;
+        }
+        .img34 {
+            width: 45%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2320%;
+            left: 45%;
+        }
+        .img35 {
+            width: 45%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2379%;
+            left: 45%;
+        }
+        .img36 {
+            width: 43%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2440%;
+            left: 50%;
+        }
+        .img37 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2440%;
+            left: 8%;
+        }
+        .img38 {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2493%;
+            left: 8%;
+        }
+        .img39 {
+            width: 43%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2570%;
+            left: 8%;
+        }
+        .img40 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2670%;
+            left: 55%;
+        }
+        .img41 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2760%;
+            left: 10%;
+        }
+        .img42 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2780%;
+            left: 55%;
+        }
+        .img43 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2860%;
+            left: 10%;
+        }
+        .img44 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2880%;
+            left: 55%;
+        }
+        .img45 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2920%;
+            left: 10%;
+        }
+        .img46 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 2980%;
+            left: 55%;
+        }
+        .img47 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 3015%;
+            left: 10%;
+        }
+        .img48 {
+            width: 35%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 3100%;
+            left: 55%;
+        }
+        .img49 {
+            width: 38%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 3175%;
+            left: 8%;
+        }
+        .img50 {
+            width: 38%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 3195%;
+            left: 55%;
+        }
+        .img51 {
+            width: 60%;
+            height: auto;
+            margin: auto;
+            position: absolute;
+            top: 3345%;
+            left: 50%;
+            transform: translate(-50%, -50%);        
+
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 2.5s ease-in-out;
+        }
+        .fade-in.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Bulgaria</h1>
+    <h2>(un)orthodox exploration</h2>
+    <a href="index.html"><img src="nklogowhite.png" class="logo"></a>
+</header>
+<section id="Sofia">
+    <img src="pics/bulgaria/plovdiv2.jpg" class="backdrop fade-in">
+<div class="text-container1 fade-in">
+    <div class="fade-in-text1">
+        <p>In western Bulgaria nestled in the eastern balkan mountain chain, lies its capital
+             and largest city, Sofia.</p>
+     </div>
+</div> 
+<img src="pics/bulgaria/government.jpg" class="img2 fade-in">
+<img src="pics/bulgaria/underground.jpg" class="img3 fade-in">
+<div class="text-container2 fade-in">
+    <div class="fade-in-text2">
+        <p>The city has a rich history dating back thousands of years, with evidence of 
+            settlements from various civilizations, including Thracian, Roman, Byzantine, Ottoman, 
+            and Soviet.</p>
+     </div>
+</div> 
+<img src="pics/bulgaria/stnicholas.JPG" class="img4 fade-in">
+<img src="pics/bulgaria/grandhotel.JPG" class="img5 fade-in">
+<img src="pics/bulgaria/tram.jpg" class="img6 fade-in">
+<img src="pics/bulgaria/fountain.JPG" class="img7 fade-in">
+<img src="pics/bulgaria/patchwork.JPG" class="img8 fade-in">
+<div class="text-container3 fade-in">
+    <div class="fade-in-text3">
+        <p>Looking north along Knyagina Maria Luisa Blvd shows the patchwork of cultural influences 
+            in Sofia: A 14th century Byzantine church, overshadowed by a Stalinist-era hotel, 
+            not 100m from a Sunni mosque, all built upon ancient Thracian and Roman ruins.</p>
+     </div>
+</div> 
+<div class="text-container4 fade-in">
+    <div class="fade-in-text4">
+        <p>And today, a modern subway station.</p>
+     </div>
+</div> 
+<img src="pics/bulgaria/nevsky1.jpg" class="img9 fade-in">
+<div class="text-container5 fade-in">
+    <div class="fade-in-text5">
+        <p>Alexander Nevsky Cathedral</p>
+     </div>
+</div> 
+<div class="text-container6 fade-in">
+    <div class="fade-in-text6">
+        <p>Sofia's largest symbol of eastern Orthodox christianity. Containing stunning gold accents,
+             historic frescoes, and built in the neo-byzantine style, this church was named after the 
+            Russo-Turkish War and Bulgaria's struggle for independence.  </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/nevsky3.JPG" class="img10 fade-in">
+<img src="pics/bulgaria/nevsky4.JPG" class="img11 fade-in">
+<img src="pics/bulgaria/nevsky2.JPG" class="img13 fade-in">
+<img src="pics/bulgaria/nevskyinterior.jpeg" class="img12 fade-in">
+<img src="pics/bulgaria/nevsky5.JPG" class="img14 fade-in">
+<div class="text-container7 fade-in">
+    <div class="fade-in-text7">
+        <p>Rila Monastery</p>
+     </div>
+</div> 
+<div class="text-container8 fade-in">
+    <div class="fade-in-text8">
+        <p>Rila was founded in the 10th century by the revered hermit Ivan Rilski. Here, he lived a 
+            life of asceticism and prayer. Over time, disciples gathered around him, and a monastic 
+            community began to form. Ivan Rilski's dedication to his spiritual path lead to the monastery's 
+            legacy as a center of Orthodox Christian worship and culture, and today a UNESCO site. </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/rila.jpg" class="img15 fade-in">
+<img src="pics/bulgaria/rilasign.JPG" class="img16 fade-in">
+<img src="pics/bulgaria/rilasign2.JPG" class="img17 fade-in">
+<img src="pics/bulgaria/entrance.jpg" class="img18 fade-in">
+<img src="pics/bulgaria/rilatree.JPG" class="img19 fade-in">
+<img src="pics/bulgaria/stairs.JPG" class="img20 fade-in">
+<img src="pics/bulgaria/bell.JPG" class="img21 fade-in">
+<img src="pics/bulgaria/doorway2.JPG" class="img22 fade-in">
+<img src="pics/bulgaria/doorway1.JPG" class="img23 fade-in">
+<div class="text-container9 fade-in">
+    <div class="fade-in-text9">
+        <p>An eastern orthodox fresco depicting the book of Genesis. </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/ivan.JPG" class="img24 fade-in">
+<div class="text-container10 fade-in">
+    <div class="fade-in-text10">
+        <p>Below the monastery, nestled against a river lies the final resting place of Rila's monks. </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/pathway.JPG" class="img25 fade-in">
+<img src="pics/bulgaria/cemetary.JPG" class="img26 fade-in">
+<img src="pics/bulgaria/rila2.JPG" class="img27 fade-in">
+<div class="text-container11 fade-in">
+    <div class="fade-in-text11">
+        <p>Plovdiv</p>
+     </div>
+</div> 
+<div class="text-container12 fade-in">
+    <div class="fade-in-text12">
+        <p>Known as the oldest settlement in Europe with roots dating back to 4000BC, Plovdiv blends the
+            preservation of an ancient Roman ampitheatre and a Byzantine fortress, with colourful Revival-era houses.  </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/meplovdiv.JPG" class="img28 fade-in">
+<img src="pics/bulgaria/oldplovdiv.JPG" class="img29 fade-in">
+<img src="pics/bulgaria/king.JPG" class="img30 fade-in">
+<img src="pics/bulgaria/churchdoor.JPG" class="img31 fade-in">
+<img src="pics/bulgaria/smallchurch.JPG" class="img32 fade-in">
+<img src="pics/bulgaria/plovdivpink.JPG" class="img33 fade-in">
+<img src="pics/bulgaria/plovdivorange.jpg" class="img34 fade-in">
+<img src="pics/bulgaria/plovdivblue.jpeg" class="img35 fade-in">
+<img src="pics/bulgaria/plovdivwhite.JPG" class="img36 fade-in">
+<img src="pics/bulgaria/plovdivred.jpeg" class="img37 fade-in">
+<img src="pics/bulgaria/plovdivcurved.JPG" class="img38 fade-in">
+<div class="text-container13 fade-in">
+    <div class="fade-in-text13">
+        <p>Throughout the 20th century, Plovdiv was home to Bulgaria's most acclaimed painter, Zlatyu Boyadzhiev.</p>
+     </div>
+</div> 
+<div class="text-container14 fade-in">
+    <div class="fade-in-text14">
+        <p> As an established painter of rural life in Bulgaria and Bulgarian traditions, he suffered a stroke which 
+            paralyzed the ride side of his body. Following the stroke, he adapted to his new condition and began painting with his left
+            hand, in an entirely different style - this time more dark and impressionist. Zlatyu still inspires slavic artwork to this day. </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/zlatyuhouse.JPG" class="img39 fade-in">
+<img src="pics/bulgaria/zlatyu.JPG" class="img40 fade-in">
+<img src="pics/bulgaria/painting3.JPG" class="img41 fade-in">
+<img src="pics/bulgaria/painting6.JPG" class="img42 fade-in">
+<img src="pics/bulgaria/painting2.JPG" class="img43 fade-in">
+<img src="pics/bulgaria/painting4.JPG" class="img44 fade-in">
+<img src="pics/bulgaria/painting.JPG" class="img45 fade-in">
+<img src="pics/bulgaria/painting5.JPG" class="img46 fade-in">
+<img src="pics/bulgaria/painting8.JPG" class="img47 fade-in">
+<div class="text-container15 fade-in">
+    <div class="fade-in-text15">
+        <p> Although no longer, clues into Bulgaria's Ottoman past are still commonplace in Plovdiv. </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/balkanmap.JPG" class="img48 fade-in">
+<img src="pics/bulgaria/istanbuldrawing.JPG" class="img49 fade-in">
+<img src="pics/bulgaria/1817.JPG" class="img50 fade-in">
+
+<div class="text-container16 fade-in">
+    <div class="fade-in-text16">
+        <p> Follow along with my journey east, through Thrace and into <b><a href="istanbul.html">Europe's largest city.</a></b> 
+        </p>
+     </div>
+</div> 
+<img src="pics/bulgaria/thrace.JPG" class="img51 fade-in">
+
+<div class="text-container17 fade-in">
+    <div class="fade-in-text17">
+        <p> Rest stop after crossing the border into Turkiye. </p>
+     </div>
+</div> 
+
+</section>
+<script>
+    const observerOptions = {
+        threshold: 0.5 // Adjust as needed
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active'); // Add 'active' class to fade in
+            }
+        });
+    }, observerOptions);
+
+    // OBSERVING EACH TEXT CONTAINER SEPARATELY
+    const textContainers = document.querySelectorAll('.text-container1, .text-container2, .text-container3, .text-container4, .text-container5, .text-container6, .text-container7, .text-container8, .text-container9, .text-container10,.text-container11, .text-container12, .text-container13,.text-container14,.text-container15,.text-container16,.text-container17');
+    textContainers.forEach(textContainer => {
+        observer.observe(textContainer);
+    });
+
+    // OBSERVING IMAGE ELEMENTS
+    const imageElements = document.querySelectorAll('.backdrop, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14,.img15,.img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24,.img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32, .img33, .img34, .img35, .img36, .img37, .img38, .img39, .img40,.img41,.img42,.img43,.img44,.img45,.img46,.img47,.img48,.img49,.img50,.img51,.img52,.img53');
+    imageElements.forEach(imageElement => {
+        observer.observe(imageElement);
+    });
+</script>
+<script>
+    // Fade in Videos
+    function handleVideoIntersection(entries, videoObserver) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1; // Add the fade-in effect
+                entry.target.play(); // Play the video
+                videoObserver.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Create an intersection observer for videos
+    const videoObserver = new IntersectionObserver(handleVideoIntersection, { threshold: 0.5 });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Observe each video element
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            video.style.opacity = 0; // Set initial opacity to 0
+            video.style.transition = 'opacity 1.5s ease-in-out'; // Add transition property
+            videoObserver.observe(video);
+        });
+    });
+</script>
+       <script>
+        // automatically play and restart videos
+        var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        function handleVideoPlay(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.play();
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }
+
+        function handleVideoEnded(event) {
+            event.target.currentTime = 0; // Restart the video from the beginning
+            event.target.play();
+        }
+
+        var videos = document.querySelectorAll('video');
+        var observer2 = new IntersectionObserver(handleVideoPlay, options);
+        videos.forEach(video => {
+            observer2.observe(video);
+            video.addEventListener('ended', handleVideoEnded);
+        });
+</script>
+
+</body>
+</html>
